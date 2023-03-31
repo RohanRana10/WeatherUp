@@ -67,7 +67,7 @@ const Home = () => {
         <>
             
             <div className={styles.container}>
-                <h1 className={styles.title}>WeatherUp</h1>
+                <h1 className={styles.title}><i class="fa-solid fa-cloud-sun-rain"></i>WeatherUp - Accurate Forcasting</h1>
                 <form onSubmit={handleSubmit} className={styles.form}>
                     <div className={styles.inputData}>
                         <input type="search" placeholder='Search for location' required className={styles.inputField} value={search} onChange={handleChange} />
@@ -87,34 +87,34 @@ const Home = () => {
                                 </div>
                                 <div className={styles.cardContainer}>
                                     <div className={styles.infoCard}>
-                                        <i class="fa-solid fa-droplet"></i>
+                                        <i className="fa-solid fa-droplet"></i>
                                         <h4>Humidity </h4>
                                         <span>{region.humidity}%</span>
                                     </div>
                                     <div className={styles.infoCard}>
-                                        <i class="fa-solid fa-temperature-half"></i>
+                                        <i className="fa-solid fa-temperature-half"></i>
                                         <h4>Feels Like </h4>
                                         <span>{region.temp ? `${Math.trunc(region.feels_like)}° C` : "--"}</span>
                                     </div>
                                     <div className={styles.infoCard}>
-                                        <i class="fa-solid fa-arrows-down-to-line"></i>
+                                        <i className="fa-solid fa-arrows-down-to-line"></i>
                                         <h4>Pressure </h4>
                                         <span>{region.temp ? `${Math.trunc(region.pressure)} hPa` : "--"} </span>
                                     </div>
                                     <div className={styles.infoCard}>
-                                        <i class="fa-solid fa-cloud-sun"></i>
+                                        <i className="fa-solid fa-cloud-sun"></i>
                                         <h4>Clouds </h4>
                                         <span>{clouds} %</span>
                                     </div>
                                     <div className={styles.infoCard}>
-                                        <i class="fa-solid fa-wind"></i>
+                                        <i className="fa-solid fa-wind"></i>
                                         <h4>Wind </h4>
                                         <span>
                                             {Math.trunc(wind.speed * 3.6)} km/h
                                         </span>
                                     </div>
                                     <div className={styles.infoCard}>
-                                        <i class="fa-regular fa-eye"></i>
+                                        <i className="fa-regular fa-eye"></i>
                                         <h4>Visibility </h4>
                                         <span>
                                             {visibility / 1000} Km

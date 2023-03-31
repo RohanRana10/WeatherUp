@@ -96,7 +96,7 @@ textarea:focus, input:focus{
 
 .form {
     display: flex;
-    margin: 0px 0px -55px 0px;
+    margin: -40px 0px -55px 0px;
 }
 
 .infoContainer {
@@ -113,6 +113,7 @@ textarea:focus, input:focus{
 
 .infoContainer h2{
     margin: 0;
+    text-align: center;
     font-size: 40px;
 }
 
@@ -123,7 +124,13 @@ textarea:focus, input:focus{
 
 .title{
     font-family: 'Raleway', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
+    text-align: center;
     margin: 25px 0px -15px 0px;
     color: maroon;
+}
+
+.title i{
+    margin-right: 10px;
+    color: lightcoral;
 }
