@@ -46,6 +46,7 @@ const Home = () => {
 
     useEffect(() => {
         fetchAPI();
+        setSearch("");
         // eslint-disable-next-line
     }, []);
 
@@ -60,6 +61,7 @@ const Home = () => {
         event.preventDefault();
         setRegion(search);
         fetchAPI();
+        setSearch("");
     }
     return (
         <>
@@ -68,7 +70,7 @@ const Home = () => {
                 <h1 className={styles.title}>WeatherUp</h1>
                 <form onSubmit={handleSubmit} className={styles.form}>
                     <div className={styles.inputData}>
-                        <input type="search" required className={styles.inputField} value={search} onChange={handleChange} />
+                        <input type="search" placeholder='Search for location' required className={styles.inputField} value={search} onChange={handleChange} />
                     </div>
                     <button type='submit' className={styles.searchButton}>Search</button>
                 </form>
