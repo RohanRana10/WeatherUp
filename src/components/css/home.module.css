@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.inputField {
+    width: 650px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid maroon;
+}
+
+.searchButton {
+    margin: 0px 0px 0px 15px;
+    font-size: 17px;
+    border-radius: 15px;
+    padding: 7px;
+    font-family: 'Poppins', sans-serif;
+    background-color: maroon;
+    border: none;
+    color: white;
+}
+
+.searchButton:hover{
+    background-color: white;
+    color: maroon;
+    border: 1px solid maroon;
+    transition: all 0.1s ease-in-out;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.container h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    margin: 25px 0px -15px 0px;
+    color: maroon;
+}
+
+.box {
+    background-color: #ff6c6c70;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: 45vh;
+    width: 700px;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.infoCard {
+    width: 105px;
+    height: 90px;
+    margin: 14px;
+    padding: 5px 0px 0px 10px;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.infoCard h4 {
+    margin: 2px 0px 0px 5px;
+    color: #c10000;
+}
+
+.infoCard i {
+    font-size: 20px;
+    color: white;
+    margin: 5px 0px 5px 5px;
+}
+
+.infoCard span {
+    /* font-size: 25px; */
+    margin: 0px 0px 5px 5px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.form {
+    display: flex;
+    margin: 0px 0px -55px 0px;
+}
+
+.infoContainer {
+    display: flex;
+    width: 235px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoContainer h3 {
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.infoContainer h2{
+    margin: 0;
+    font-size: 40px;
+}
+
+.noDataPara{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
