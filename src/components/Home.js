@@ -13,7 +13,8 @@ const Home = () => {
     const [wind, setWind] = useState("");
     const [clouds, setClouds] = useState("");
 
-    const apiKey = process.env.REACT_APP_WEATHER_API;
+    // const apiKey = process.env.REACT_APP_WEATHER_API;
+    const apiKey = '1b6ef03eab26715d8675d1633bf6eb6e';
 
     const fetchAPI = async () => {
         const CoordinatesUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${search}&appid=${apiKey}`
@@ -64,7 +65,7 @@ const Home = () => {
         <>
             
             <div className={styles.container}>
-                <h1>WeatherUp</h1>
+                <h1 className={styles.title}>WeatherUp</h1>
                 <form onSubmit={handleSubmit} className={styles.form}>
                     <div className={styles.inputData}>
                         <input type="search" required className={styles.inputField} value={search} onChange={handleChange} />
