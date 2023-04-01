@@ -67,7 +67,7 @@ const Home = () => {
         <>
             
             <div className={styles.container}>
-                <h1 className={styles.title}><i class="fa-solid fa-cloud-sun-rain"></i>WeatherUp - Accurate Forcasting</h1>
+                <h1 className={styles.title}><i className="fa-solid fa-cloud-sun-rain"></i>WeatherUp - Accurate Forcasting</h1>
                 <form onSubmit={handleSubmit} className={styles.form}>
                     <div className={styles.inputData}>
                         <input type="search" placeholder='Search for location' required className={styles.inputField} value={search} onChange={handleChange} />
