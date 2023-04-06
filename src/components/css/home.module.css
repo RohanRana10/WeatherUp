@@ -26,14 +26,15 @@
     color: white;
 }
 
-.searchButton:hover{
+.searchButton:hover {
     background-color: white;
     color: maroon;
     border: 1px solid maroon;
     transition: all 0.1s ease-in-out;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
 }
 
@@ -48,7 +49,7 @@ textarea:focus, input:focus{
     background-color: #ff6c6c70;
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;
-    height: 45vh;
+    height: auto;
     width: 700px;
     padding: 20px;
 }
@@ -111,18 +112,18 @@ textarea:focus, input:focus{
     margin: 0;
 }
 
-.infoContainer h2{
+.infoContainer h2 {
     margin: 0;
     text-align: center;
     font-size: 40px;
 }
 
-.noDataPara{
+.noDataPara {
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
-.title{
+.title {
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
     text-align: center;
@@ -130,7 +131,79 @@ textarea:focus, input:focus{
     color: maroon;
 }
 
-.title i{
+.title i {
     margin-right: 10px;
     color: lightcoral;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* height: 100vh; */
+        flex-direction: column;
+    }
+
+    .container h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        margin: 10px 0px 10px 0px;
+        color: maroon;
+    }
+
+    .inputField {
+        width: 270px;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 15px;
+        font-family: 'Poppins', sans-serif;
+        border: 1px solid maroon;
+    }
+
+    .box {
+        background-color: #ff6c6c70;
+        border-radius: 15px;
+        font-family: 'Poppins', sans-serif;
+        height: auto;
+        margin-top: 90px;
+        /* margin-bottom: 10px; */
+        /* margin-bottom: 50px; */
+        width: 80vw;
+        padding: 20px;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+        justify-content: space-evenly;
+    }
+
+    .title {
+        margin-top: 80px !important;
+    }
+
+    .form {
+        display: flex;
+        margin: 20px 0px -55px 0px;
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        width: 280px;
+        flex-wrap: wrap;
+    }
+
+    .infoContainer {
+        display: flex;
+        width: 235px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 }
