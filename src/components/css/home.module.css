@@ -142,19 +142,20 @@ input:focus {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        /* height: 100vh; */
+        height: auto;
+        /*change*/
         flex-direction: column;
     }
 
     .container h1 {
         font-family: 'Raleway', sans-serif;
-        font-size: 40px;
-        margin: 10px 0px 10px 0px;
+        font-size: 38px;
+        margin: 10px 2px 10px 2px;
         color: maroon;
     }
 
     .inputField {
-        width: 270px;
+        width: 60vw;
         padding: 15px;
         font-size: 18px;
         border-radius: 15px;
@@ -183,7 +184,7 @@ input:focus {
     }
 
     .title {
-        margin-top: 80px !important;
+        /* margin-top: 20px !important; */
     }
 
     .form {
